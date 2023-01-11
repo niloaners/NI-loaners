@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>NI user-list</title>
+  </head>
+  <body>
+    <div class="container">
+      <form class="col s12" id="input-form">
+        <h2 id="headText">NI Loaner User List</h2>
+        <p class="lead">Hear you can add and delete your user list</p>
+
+        <div class="row">
+          <div class="input-field col s6">
+            <input type="text" id="first_name" />
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input type="text" id="last_name" />
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="email" id="email" />
+            <label for="email">Email Address</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="input-field col s12">
+            <input type="password" id="password" />
+            <label for="password"></label>
+          </div>
+        </div>
+
+        <input type="submit" class="btn" value="Submit" />
+      </form>
+
+      <div class="row">
+        <div class="input-field col s6">
+          <input type="text" id="search" />
+          <label for="search">Search</label>
+        </div>
+      </div>
+
+      <div class="row">
+        <table class="striped">
+          <thead class="teal lighten-2 white-text">
+            <tr>
+              <th>ID</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="user-list"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="./JavaScript.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </body>
+</html>
